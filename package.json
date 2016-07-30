@@ -1,0 +1,23 @@
+{
+  "name": "eslint-config-lei",
+  "version": "0.0.1",
+  "description": "my own eslint config",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leizongmin/eslint-config-lei.git"
+  },
+  "keywords": [
+    "eslint",
+    "lei"
+  ],
+  "author": "Zongmin Lei <leizongmin@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leizongmin/eslint-config-lei/issues"
+  },
+  "homepage": "https://github.com/leizongmin/eslint-config-lei#readme"
+}
