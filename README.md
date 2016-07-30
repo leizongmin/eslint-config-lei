@@ -14,7 +14,7 @@ $ npm install eslint-config-lei
 
 ```javascript
 module.exports = {
-  "extends": "lei",
+  'extends': 'lei',
 };
 ```
 
@@ -22,8 +22,8 @@ module.exports = {
 
 ```javascript
 module.exports = {
-  "parser": "babel-eslint",
-  "extends": "lei",
+  'parser': 'babel-eslint',
+  'extends': 'lei',
 };
 ```
 
@@ -31,7 +31,7 @@ module.exports = {
 
 ```javascript
 module.exports = {
-  "extends": "lei/mocha",
+  'extends': 'lei/mocha',
 };
 ```
 
