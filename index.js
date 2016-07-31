@@ -228,7 +228,7 @@ module.exports = {
     // 强制每一行中所允许的最大语句数量
     'max-statements-per-line': [ 'warn', { 'max': 5 }],
     // 限制最大参数个数
-    'max-params': [ 'warn', 5 ],
+    'max-params': [ 'warn', 10 ],
     // 强制回调函数最大嵌套深度
     'max-nested-callbacks': [ 'error', 10 ],
 
