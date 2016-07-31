@@ -230,7 +230,9 @@ module.exports = {
     // 限制最大参数个数
     'max-params': [ 'warn', 10 ],
     // 强制回调函数最大嵌套深度
-    'max-nested-callbacks': [ 'error', 10 ],
+    'max-nested-callbacks': [ 'warn', 10 ],
+    // 要求中缀操作符周围有空格
+    'space-infix-ops': [ 'warn', { 'int32Hint': false }],
 
   },
 };
