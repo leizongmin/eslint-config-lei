@@ -1,13 +1,14 @@
 module.exports = {
-  'env': {
-    'node': true,
-    'es6': true,
+  env: {
+    node: true,
+    es6: true,
   },
-  'extends': [ 'eslint:recommended' ],
-  'parserOptions': {
-    'sourceType': 'module',
+  extends: 'eslint:recommended',
+  parserOptions: {
+    sourceType: 'module',
+    allowImportExportEverywhere: false,
   },
-  'rules': {
+  rules: {
 
     // ---------------------------- 强制的风格 -----------------------------------
     // 允许使用console
@@ -16,7 +17,7 @@ module.exports = {
     'no-unused-vars': [ 'error', { 'argsIgnorePattern': '^_' }],
     // array函数必须返回值
     'array-callback-return': 'error',
-    // 变量只能在其作用于内使用
+    // 变量只能在其作用域内使用
     'block-scoped-var': 'error',
     // 大括号规则：允许单行时省略大括号，但必须保持一致
     'curly': [ 'error', 'multi-line' ],
@@ -119,8 +120,6 @@ module.exports = {
     'no-new-object': 'error',
     // 禁止使用一元操作符 ++ 和 --
     'no-plusplus': [ 'warn', { 'allowForLoopAfterthoughts': true }],
-    // 禁止 function 标识符和应用程序之间有空格
-    'no-spaced-func': 'error',
     // 禁止可以表达为更简单结构的条件表达式
     'no-unneeded-ternary': 'error',
     // 禁止属性前有空白
@@ -129,11 +128,6 @@ module.exports = {
     'one-var-declaration-per-line': [ 'error', 'initializations' ],
     // 禁止使用 Unicode 字节顺序标记 (BOM)
     'unicode-bom': 'error',
-    // 禁止不必要的圆括号
-    'no-extra-parens': [ 'error', 'all', {
-      'returnAssign': false,
-      'nestedBinaryExpressions': false,
-    }],
     // 禁止不必要的布尔类型转换
     'no-extra-boolean-cast': 'error',
     // 要求使用 === 和 !==
@@ -233,6 +227,8 @@ module.exports = {
     'max-nested-callbacks': [ 'warn', 10 ],
     // 要求中缀操作符周围有空格
     'space-infix-ops': [ 'warn', { 'int32Hint': false }],
+    // 禁止 function 标识符和应用程序之间有空格
+    'no-spaced-func': 'warn',
 
   },
 };
