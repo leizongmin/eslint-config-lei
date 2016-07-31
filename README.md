@@ -46,19 +46,19 @@ module.exports = {
 执行以下命令即可：
 
 ```bash
-$ eslint dir/*.js
+$ eslint dir/**.js
 ```
 
 如果需要自动格式化代码，在执行时添加`--fix`选项：
 
 ```bash
-$ eslint dir/*.js --fix
+$ eslint dir/**.js --fix
 ```
 
 
 ## 常见问题
 
-1、如果在结合`babel-eslint`时报错，可能是该模块的 Bug，目前可以通过以下方法解决：
+1、如果在使用`babel-eslint`时报错，可能是该模块的 Bug，目前可以通过以下方法解决：
 
 ```javascript
 module.exports = {
@@ -76,7 +76,7 @@ module.exports = {
 };
 ```
 
-2、在使用过程中，可能会遇到一些例外情况，比如需要更改参数对象的属性，可以通过`eslint-disable-next`来临时关闭对以下行的检查：
+2、在使用过程中，可能会遇到一些例外情况，比如需要更改参数对象的属性，可以通过`eslint-disable-next`来临时关闭对下一行的检查：
 
 ```javascript
 // eslint-disable-next-line no-param-reassign
