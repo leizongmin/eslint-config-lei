@@ -29,8 +29,6 @@ module.exports = {
     'no-div-regex': 'error',
     // 禁止扩展原生对象
     'no-extend-native': 'error',
-    // 禁止使用多个空格
-    'no-multi-spaces': 'error',
     // 禁止使用多行字符串
     'no-multi-str': 'error',
     // 禁止对原生对象赋值
@@ -44,7 +42,7 @@ module.exports = {
     // 禁止在字符串字面量中使用八进制转义序列
     'no-octal-escape': 'error',
     // 禁止对函数参数再赋值及修改其属性
-    'no-param-reassign': [ 'error', { 'props': true }],
+    'no-param-reassign': 'error',
     // 禁止重新声明变量
     'no-redeclare': 'error',
     // 禁止在 return 语句中使用赋值语句
@@ -112,8 +110,6 @@ module.exports = {
     'no-array-constructor': 'error',
     // 禁止 if 语句作为唯一语句出现在 else 语句块中
     'no-lonely-if': 'error',
-    // 禁止使用 空格 和 tab 混合缩进
-    'no-mixed-spaces-and-tabs': 'error',
     // 禁止使用嵌套的三元表达式
     'no-nested-ternary': 'error',
     // 禁止使用 Object 构造函数
@@ -122,8 +118,6 @@ module.exports = {
     'no-plusplus': [ 'warn', { 'allowForLoopAfterthoughts': true }],
     // 禁止可以表达为更简单结构的条件表达式
     'no-unneeded-ternary': 'error',
-    // 禁止属性前有空白
-    'no-whitespace-before-property': 'error',
     // 要求在变量声明周围换行
     'one-var-declaration-per-line': [ 'error', 'initializations' ],
     // 禁止使用 Unicode 字节顺序标记 (BOM)
@@ -229,6 +223,12 @@ module.exports = {
     'space-infix-ops': [ 'warn', { 'int32Hint': false }],
     // 禁止 function 标识符和应用程序之间有空格
     'no-spaced-func': 'warn',
+    // 禁止属性前有空白
+    'no-whitespace-before-property': 'warn',
+    // 禁止使用多个空格
+    'no-multi-spaces': 'warn',
+    // 禁止使用 空格 和 tab 混合缩进
+    'no-mixed-spaces-and-tabs': 'warn',
 
   },
 };
