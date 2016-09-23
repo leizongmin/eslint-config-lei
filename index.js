@@ -100,8 +100,6 @@ module.exports = {
     'generator-star-spacing': [ 'error', { 'before': false, 'after': true }],
     // 强制在 yield* 表达式中 * 周围使用空格，比如 yield* other();
     'yield-star-spacing': [ 'error', { 'before': false, 'after': true }],
-    // 要求构造函数首字母大写
-    'new-cap': 'error',
     // 要求调用无参构造函数时带括号
     'new-parens': 'error',
     // 禁止使用 Array 构造函数
@@ -229,6 +227,8 @@ module.exports = {
     'no-mixed-spaces-and-tabs': 'warn',
     // 禁止对函数参数再赋值及修改其属性
     'no-param-reassign': 'warn',
+    // 要求构造函数首字母大写
+    'new-cap': 'warn',
 
   },
 };
