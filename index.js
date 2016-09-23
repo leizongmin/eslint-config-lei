@@ -13,8 +13,6 @@ module.exports = {
     // ---------------------------- 强制的风格 -----------------------------------
     // 允许使用console
     'no-console': [ 'off' ],
-    // 允许_开头的未使用参数
-    'no-unused-vars': [ 'error', { 'argsIgnorePattern': '^_' }],
     // array函数必须返回值
     'array-callback-return': 'error',
     // 变量只能在其作用域内使用
@@ -229,6 +227,8 @@ module.exports = {
     'no-param-reassign': 'warn',
     // 要求构造函数首字母大写
     'new-cap': 'warn',
+    // 允许_开头的未使用参数
+    'no-unused-vars': [ 'warn', { 'argsIgnorePattern': '^_' }],
 
   },
 };
