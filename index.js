@@ -90,8 +90,6 @@ module.exports = {
     'no-new-symbol': 'error',
     // 要求对象字面量简写语法
     'object-shorthand': 'error',
-    // 建议使用 const
-    'prefer-const': 'error',
     // 禁用函数内没有yield的 generator 函数
     'require-yield': 'error',
     // 强制 generator 函数中 * 号周围有空格，比如 function* generator() {}
@@ -229,6 +227,8 @@ module.exports = {
     'new-cap': 'warn',
     // 允许_开头的未使用参数
     'no-unused-vars': [ 'warn', { 'argsIgnorePattern': '^_' }],
+    // 建议使用 const
+    'prefer-const': 'warn',
 
   },
 };
