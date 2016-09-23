@@ -41,8 +41,6 @@ module.exports = {
     'no-octal': 'error',
     // 禁止在字符串字面量中使用八进制转义序列
     'no-octal-escape': 'error',
-    // 禁止对函数参数再赋值及修改其属性
-    'no-param-reassign': 'error',
     // 禁止重新声明变量
     'no-redeclare': 'error',
     // 禁止在 return 语句中使用赋值语句
@@ -229,6 +227,8 @@ module.exports = {
     'no-multi-spaces': 'warn',
     // 禁止使用 空格 和 tab 混合缩进
     'no-mixed-spaces-and-tabs': 'warn',
+    // 禁止对函数参数再赋值及修改其属性
+    'no-param-reassign': 'warn',
 
   },
 };
