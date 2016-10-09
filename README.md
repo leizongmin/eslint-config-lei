@@ -55,6 +55,12 @@ $ eslint dir/**.js
 $ eslint dir/**.js --fix
 ```
 
+## 配置文件
+
++ `lei` - 默认的配置，基于Node.js
++ `lei/mocha` - mocha测试环境
++ `lei/wechat` - 微信小程序环境
+
 
 ## 常见问题
 
