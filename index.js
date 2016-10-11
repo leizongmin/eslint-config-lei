@@ -8,6 +8,7 @@ module.exports = {
     sourceType: 'module',
     allowImportExportEverywhere: false,
   },
+  plugins: [ 'eslint-plugin-promise' ],
   rules: {
 
     // ---------------------------- 强制的风格 -----------------------------------
@@ -229,6 +230,10 @@ module.exports = {
     'no-unused-vars': [ 'warn', { 'argsIgnorePattern': '^_' }],
     // 建议使用 const
     'prefer-const': 'warn',
+
+    // ------------------------ Pomise 强制的风格 --------------------------------
+    'promise/catch-or-return': 'error',
+    'promise/param-names': 'error',
 
   },
 };
