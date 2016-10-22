@@ -90,12 +90,6 @@ module.exports = {
     'no-new-symbol': 'error',
     // 要求对象字面量简写语法
     'object-shorthand': 'error',
-    // 禁用函数内没有yield的 generator 函数
-    'require-yield': 'error',
-    // 强制 generator 函数中 * 号周围有空格，比如 function* generator() {}
-    'generator-star-spacing': [ 'error', { 'before': false, 'after': true }],
-    // 强制在 yield* 表达式中 * 周围使用空格，比如 yield* other();
-    'yield-star-spacing': [ 'error', { 'before': false, 'after': true }],
     // 要求调用无参构造函数时带括号
     'new-parens': 'error',
     // 禁止使用 Array 构造函数
@@ -229,6 +223,12 @@ module.exports = {
     'no-unused-vars': [ 'warn', { 'argsIgnorePattern': '^_' }],
     // 建议使用 const
     'prefer-const': 'warn',
+    // 禁用函数内没有yield的 generator 函数
+    'require-yield': 'warn',
+    // 建议 generator 函数中 * 号周围有空格，比如 function* generator() {}
+    'generator-star-spacing': [ 'warn', { 'before': false, 'after': true }],
+    // 建议在 yield* 表达式中 * 周围使用空格，比如 yield* other();
+    'yield-star-spacing': [ 'warn', { 'before': false, 'after': true }],
 
   },
 };
