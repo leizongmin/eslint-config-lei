@@ -88,8 +88,6 @@ module.exports = {
     'no-this-before-super': 'error',
     // 禁用 new Symbol()
     'no-new-symbol': 'error',
-    // 要求对象字面量简写语法
-    'object-shorthand': 'error',
     // 要求调用无参构造函数时带括号
     'new-parens': 'error',
     // 禁止使用 Array 构造函数
@@ -102,8 +100,6 @@ module.exports = {
     'no-new-object': 'error',
     // 禁止使用一元操作符 ++ 和 --
     'no-plusplus': [ 'warn', { 'allowForLoopAfterthoughts': true }],
-    // 禁止可以表达为更简单结构的条件表达式
-    'no-unneeded-ternary': 'error',
     // 要求在变量声明周围换行
     'one-var-declaration-per-line': [ 'error', 'initializations' ],
     // 禁止使用 Unicode 字节顺序标记 (BOM)
@@ -229,6 +225,10 @@ module.exports = {
     'generator-star-spacing': [ 'warn', { 'before': false, 'after': true }],
     // 建议在 yield* 表达式中 * 周围使用空格，比如 yield* other();
     'yield-star-spacing': [ 'warn', { 'before': false, 'after': true }],
+    // 建议对象字面量简写语法
+    'object-shorthand': 'warn',
+    // 建议可以表达为更简单结构的条件表达式
+    'no-unneeded-ternary': 'warn',
 
   },
 };
