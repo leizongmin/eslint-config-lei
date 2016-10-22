@@ -1,8 +1,13 @@
 {
   "name": "eslint-config-lei",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "my own eslint config",
   "main": "index.js",
+  "files": [
+    "index.js",
+    "mocha.js",
+    "wechat.js"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint *.js --fix",
@@ -21,5 +26,9 @@
   "bugs": {
     "url": "https://github.com/leizongmin/eslint-config-lei/issues"
   },
-  "homepage": "https://github.com/leizongmin/eslint-config-lei#readme"
+  "homepage": "https://github.com/leizongmin/eslint-config-lei#readme",
+  "peerDependencies": {
+    "eslint": "^3.0",
+    "eslint-plugin-promise": "^3.0.0"
+  }
 }

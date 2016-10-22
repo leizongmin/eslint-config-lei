@@ -3,8 +3,11 @@
 ## 安装
 
 ```bash
-$ npm install eslint-config-lei --save-dev
+$ npm install eslint-config-lei eslint-plugin-promise --save-dev
 ```
+
+说明：由于本配置使用了`promise`插件，因此需要同时安装`eslint-plugin-promise`模块。
+
 
 ## 使用方法
 
@@ -57,7 +60,7 @@ $ eslint dir/**.js --fix
 
 ## 配置文件
 
-+ `lei` - 默认的配置，基于Node.js
++ `lei` - 默认的配置，基于Node.js/ES6
 + `lei/mocha` - mocha测试环境
 + `lei/wechat` - 微信小程序环境
 
