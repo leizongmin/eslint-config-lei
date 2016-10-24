@@ -95,6 +95,11 @@ param.xxx = 'ok';
 **注意：任何时候请勿使用`eslint-disable`来关闭`eslint`的检查，如果该备注不能与`eslint-enable`成对出现将会导致余下的程序不能正常获得检查**
 
 
+## 相关链接
+
++ [开始使用 JSDoc](http://usejsdoc.org/about-getting-started.html)
+
+
 ## License
 
 ```
