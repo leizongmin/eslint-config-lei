@@ -65,15 +65,15 @@ module.exports = {
     // 需要把立即执行的函数包裹起来，比如 (function () { return { y: 1 };})();
     'wrap-iife': [ 'error', 'inside' ],
     // 条件等于比较时，禁止字面量在左边，比如 if ('hello' === a)
-    'yoda': [ 'error', 'never', { 'exceptRange': true }],
+    'yoda': [ 'error', 'never', { exceptRange: true }],
     // 禁用标签语句
     'no-labels': 'error',
     // 禁用不必要的分号
     'no-extra-semi': 'error',
     // 禁止定义前使用变量
     'no-use-before-define': [ 'error', {
-      'functions': false,
-      'classes': false,
+      functions: false,
+      classes: false,
     }],
     // 禁止使用 var
     'no-var': 'error',
@@ -100,7 +100,7 @@ module.exports = {
     // 禁止使用 Object 构造函数
     'no-new-object': 'error',
     // 禁止使用一元操作符 ++ 和 --
-    'no-plusplus': [ 'warn', { 'allowForLoopAfterthoughts': true }],
+    'no-plusplus': [ 'warn', { allowForLoopAfterthoughts: true }],
     // 要求在变量声明周围换行
     'one-var-declaration-per-line': [ 'error', 'initializations' ],
     // 禁止使用 Unicode 字节顺序标记 (BOM)
@@ -130,37 +130,37 @@ module.exports = {
     // 换行符使用\n
     'linebreak-style': [ 'warn', 'unix' ],
     // 字符串只能使用单引号或者反引号
-    'quotes': [ 'warn', 'single', { 'allowTemplateLiterals': true }],
+    'quotes': [ 'warn', 'single', { allowTemplateLiterals: true }],
     // 末尾需要分号
     'semi': [ 'warn', 'always' ],
     // 强制圆括号内有空格
     'space-in-parens': [ 'warn', 'never' ],
     // 强制对象的花括号中有空格
     'object-curly-spacing': [ 'warn', 'always', {
-      'objectsInObjects': false,
-      'arraysInObjects': false,
+      objectsInObjects: false,
+      arraysInObjects: false,
     }],
     // 强制在方括号内使用空格
     'array-bracket-spacing': [ 'warn', 'always', {
-      'objectsInArrays': false,
-      'arraysInArrays': false,
+      objectsInArrays: false,
+      arraysInArrays: false,
     }],
     // 要求或禁止在注释前有空白
-    'spaced-comment': [ 'warn', 'always', { 'exceptions': [ '-', '+', '=' ]}],
+    'spaced-comment': [ 'warn', 'always', { exceptions: [ '-', '+', '=' ]}],
     // 禁用警告注释
     'no-warning-comments': [ 'warn', {
-      'terms': [ 'todo', 'fixme', 'fix' ],
-      'location': 'anywhere',
+      terms: [ 'todo', 'fixme', 'fix' ],
+      location: 'anywhere',
     }],
     // 要求函数圆括号之前有一个空格，比如 function () {} 或 function aaa() {}
     'space-before-function-paren': [ 'warn', {
-      'anonymous': 'always',
-      'named': 'never',
+      anonymous: 'always',
+      named: 'never',
     }],
     // 要求文件末尾保留一行空行
     'eol-last': 'warn',
     // 禁用行尾空格
-    'no-trailing-spaces': [ 'warn', { 'skipBlankLines': true }],
+    'no-trailing-spaces': [ 'warn', { skipBlankLines: true }],
     // 要求箭头函数的箭头之前或之后有空格
     'arrow-spacing': 'warn',
     // 强制模板字符串中空格的使用
@@ -170,40 +170,40 @@ module.exports = {
     // 强制在单行代码块中使用空格
     'block-spacing': 'warn',
     // 大括号风格
-    'brace-style': [ 'warn', '1tbs', { 'allowSingleLine': true }],
+    'brace-style': [ 'warn', '1tbs', { allowSingleLine: true }],
     // 强制在逗号周围使用空格
-    'comma-spacing': [ 'warn', { 'before': false, 'after': true }],
+    'comma-spacing': [ 'warn', { before: false, after: true }],
     // 强制使用一致的逗号风格
     'comma-style': [ 'warn', 'last' ],
     // 强制在对象字面量的键和值之间使用一致的空格
     'key-spacing': [ 'warn', {
-      'beforeColon': false,
-      'afterColon': true,
+      beforeColon: false,
+      afterColon: true,
     }],
     // 禁止使用内联注释
     'no-inline-comments': 'warn',
     // 不允许多个空行
     'no-multiple-empty-lines': [ 'warn', {
-      'max': 2,
-      'maxEOF': 1,
-      'maxBOF': 1,
+      max: 2,
+      maxEOF: 1,
+      maxBOF: 1,
     }],
     // 强制文件的最大行数
     'max-lines': [ 'warn', {
-      'max': 1000,
-      'skipComments': true,
-      'skipBlankLines': true,
+      max: 1000,
+      skipComments: true,
+      skipBlankLines: true,
     }],
     // 强制函数内最大语句数量
     'max-statements': [ 'warn', 200 ],
     // 强制每一行中所允许的最大语句数量
-    'max-statements-per-line': [ 'warn', { 'max': 5 }],
+    'max-statements-per-line': [ 'warn', { max: 5 }],
     // 限制最大参数个数
     'max-params': [ 'warn', 10 ],
     // 强制回调函数最大嵌套深度
     'max-nested-callbacks': [ 'warn', 10 ],
     // 要求中缀操作符周围有空格
-    'space-infix-ops': [ 'warn', { 'int32Hint': false }],
+    'space-infix-ops': [ 'warn', { int32Hint: false }],
     // 禁止 function 标识符和应用程序之间有空格
     'no-spaced-func': 'warn',
     // 禁止属性前有空白
@@ -217,15 +217,15 @@ module.exports = {
     // 要求构造函数首字母大写
     'new-cap': 'warn',
     // 允许_开头的未使用参数
-    'no-unused-vars': [ 'warn', { 'argsIgnorePattern': '^_' }],
+    'no-unused-vars': [ 'warn', { argsIgnorePattern: '^_' }],
     // 建议使用 const
     'prefer-const': 'warn',
     // 禁用函数内没有yield的 generator 函数
     'require-yield': 'warn',
     // 建议 generator 函数中 * 号周围有空格，比如 function* generator() {}
-    'generator-star-spacing': [ 'warn', { 'before': false, 'after': true }],
+    'generator-star-spacing': [ 'warn', { before: false, after: true }],
     // 建议在 yield* 表达式中 * 周围使用空格，比如 yield* other();
-    'yield-star-spacing': [ 'warn', { 'before': false, 'after': true }],
+    'yield-star-spacing': [ 'warn', { before: false, after: true }],
     // 建议对象字面量简写语法
     'object-shorthand': 'warn',
     // 建议可以表达为更简单结构的条件表达式
@@ -236,6 +236,28 @@ module.exports = {
     'promise/catch-or-return': 'error',
     // new Promise() 时，函数的参数名只能为标准的 resolve, reject
     'promise/param-names': 'error',
+
+    // ------------------------ JSDoc建议的风格 --------------------------------
+    'valid-jsdoc': [ 'warn', {
+      prefer: {
+        return: 'return',
+      },
+      preferType: {
+        object: 'Object',
+        number: 'Number',
+        boolean: 'Boolean',
+        array: 'Array',
+        string: 'String',
+        function: 'Function',
+        symbol: 'Symbol',
+        mixed: 'Mixed',
+        promise: 'Promise',
+      },
+      requireReturn: false,
+      requireReturnType: true,
+      requireParamDescription: false,
+      requireReturnDescription: false,
+    }],
 
   },
 };
