@@ -94,6 +94,36 @@ param.xxx = 'ok';
 
 **注意：任何时候请勿使用`eslint-disable`来关闭`eslint`的检查，如果该备注不能与`eslint-enable`成对出现将会导致余下的程序不能正常获得检查**
 
+3、检查 HTML 文件内的 script 标签：
+
+需要执行以下命令安装`eslint-plugin-html`插件：
+
+```bash
+$ npm install eslint-plugin-html --save-dev
+```
+
+并修改文件`.eslintrc.js`，载入`eslint-plugin-html`插件：
+
+```
+{
+  plugins: [ 'html' ],
+}
+```
+
+在 HTML 文件中，`<script>`标签需要包含`type="text/javascript"`，比如：
+
+```html
+<script type="text/javascript">
+  var a = 10;
+</script>
+```
+
+由于`eslint`命令默认只会检查`.js`后缀的文件，所以需要在执行命令时指定`.html`后缀，比如：
+
+```bash
+$ eslint --ext .js,.html . --fix
+```
+
 
 ## 相关链接
 
