@@ -111,6 +111,14 @@ module.exports = {
     'eqeqeq': [ 'error', 'allow-null' ],
     // 禁止在 else 前有 return
     'no-else-return': 'error',
+    // 禁止变量声明覆盖外层作用域的变量
+    'no-shadow': [ 'error', {
+      builtinGlobals: true,
+      hoist: 'functions',
+      allow: [ 'err', 'error', 'resolve', 'reject', 'done', 'callback', 'next' ],
+    }],
+    // 关键字不能被遮蔽
+    'no-shadow-restricted-names': 'error',
 
     // ------------------------ Node.js 强制的风格 -------------------------------
     // 强制回调错误处理（当第一个参数以 err 开头时）
