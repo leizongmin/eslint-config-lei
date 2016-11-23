@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-lei",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "my own eslint config",
   "main": "index.js",
   "files": [

@@ -111,12 +111,6 @@ module.exports = {
     'eqeqeq': [ 'error', 'allow-null' ],
     // 禁止在 else 前有 return
     'no-else-return': 'error',
-    // 禁止变量声明覆盖外层作用域的变量
-    'no-shadow': [ 'error', {
-      builtinGlobals: true,
-      hoist: 'functions',
-      allow: [ 'err', 'error', 'resolve', 'reject', 'done', 'callback', 'next' ],
-    }],
     // 关键字不能被遮蔽
     'no-shadow-restricted-names': 'error',
 
@@ -238,6 +232,12 @@ module.exports = {
     'object-shorthand': 'warn',
     // 建议可以表达为更简单结构的条件表达式
     'no-unneeded-ternary': 'warn',
+    // 禁止变量声明覆盖外层作用域的变量
+    'no-shadow': [ 'warn', {
+      builtinGlobals: true,
+      hoist: 'functions',
+      allow: [ 'err', 'error', 'resolve', 'reject', 'done', 'callback', 'next' ],
+    }],
 
     // ------------------------ Pomise 强制的风格 --------------------------------
     // 调用 Pomise 函数时，必须有 .catch(callback) 或者用 return 返回当前 Promise 对象
