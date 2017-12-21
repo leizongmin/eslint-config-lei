@@ -1,5 +1,7 @@
 # eslint-config 配置
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/leizongmin/eslint-config-lei.svg)](https://greenkeeper.io/)
+
 ## 安装
 
 ```bash
